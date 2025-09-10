@@ -1,0 +1,55 @@
+/* ===== ESTILOS PARA EL EDITOR MEMENTO ===== */
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente fácil de leer */
+    max-width: 600px; /* Ancho máximo para que no se vea muy ancho */
+    margin: 50px auto; /* Centra la página horizontalmente */
+    padding: 20px; /* Espacio interno */
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center; /* Centra el título */
+    color: #333; /* Color gris oscuro */
+}
+
+/* Estilo del área de texto principal */
+textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 200px; /* Altura fija */
+    margin: 20px 0; /* Espacio arriba y abajo */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Esquinas redondeadas */
+}
+
+/* Estilo del campo de entrada de texto */
+input {
+    padding: 8px; /* Espacio interno */
+    margin: 5px; /* Espacio entre elementos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Esquinas redondeadas */
+}
+
+/* Estilo de los botones */
+button {
+    padding: 8px 15px; /* Espacio interno */
+    margin: 5px; /* Espacio entre botones */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    background-color: #007bff; /* Color azul */
+    color: white; /* Texto blanco */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+}
+
+/* Efecto cuando pasas el mouse sobre un botón */
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Estilo cuando el botón está deshabilitado */
+button:disabled {
+    background-color: #ccc; /* Color gris */
+    cursor: not-allowed; /* Cursor de "no permitido" */
+}

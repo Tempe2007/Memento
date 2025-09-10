@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editor Memento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editor con Patrón Memento</h1>
+    <textarea id="textArea" placeholder="Escribe aquí..."></textarea>
+    <div>
+        <input type="text" id="textInput" placeholder="Texto a agregar">
+        <button onclick="addText()">Agregar</button>
+        <button id="undoBtn" onclick="undo()" disabled>Undo</button>
+    </div>
+    <script src="memento.js"></script>
+</body>
+</html>
