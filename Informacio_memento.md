@@ -40,66 +40,12 @@ Es un patrón de diseño que permite guardar y restaurar el estado de un objeto 
 3. Restauramos el estado desde esa fotografía
 4. El usuario ve el estado anterior
 
----
-
-**Explicación del Código**
-
-### **Clase Memento**:
-
-```javascript
-class Memento {
-  constructor(text) {
-    this.text = text; // Guarda el texto tal como estaba
-  }
-}
-```
-
-**Explicación**: Es como una caja que guarda el texto exactamente como estaba.
-
-### **Clase Editor**:
-
-```javascript
-class Editor {
-  save() {
-    return new Memento(this.text); // Crea una "fotografía"
-  }
-
-  restore(memento) {
-    this.text = memento.text; // Restaura desde la "fotografía"
-  }
-}
-```
-
-**Explicación**: Puede tomar una "fotografía" de su estado actual y también puede volver a un estado anterior.
-
-### **Clase History**:
-
-```javascript
-class History {
-  add(memento) {
-    this.mementos.push(memento); // Guarda la "fotografía"
-  }
-
-  undo() {
-    return this.mementos.pop(); // Devuelve la última "fotografía"
-  }
-}
-```
-
-**Explicación**: Es como un álbum que guarda todas las "fotografías" y puede devolver la más reciente.
-
-**Puntos Clave para la Explicación Oral**
 
 ### **1. Problema que Resuelve**:
 
 - "Imaginen que están escribiendo en Word y quieren deshacer algo"
 - "El patrón Memento es como programar esa funcionalidad de 'deshacer'"
 
-### **2. Analogía Principal**:
-
-- "Es como tener un álbum de fotos de tu aplicación"
-- "Cada vez que haces algo importante, tomas una foto"
-- "Si algo sale mal, puedes volver a la foto anterior"
 
 ### **3. Ventajas**:
 
@@ -108,14 +54,4 @@ class History {
 - **Seguridad**: No pierdes trabajo
 - **Flexibilidad**: Puedes volver a cualquier punto
 
-### **4. Cuándo Usarlo**:
 
-- Editores de texto
-- Editores de imágenes
-- Juegos (guardar partida)
-- Aplicaciones de dibujo
-- Cualquier app donde el usuario pueda "arrepentirse"
-
-**Conclusión para la Explicación**
-
-"El patrón Memento es una herramienta muy útil que nos permite darle a nuestros usuarios la capacidad de deshacer acciones, como si fuera un Ctrl+Z personalizado. Es especialmente útil en aplicaciones donde el usuario trabaja con contenido que puede querer modificar o revertir."
